@@ -1,10 +1,11 @@
-import { NavBar } from '@/components';
+import { NavBar, Footer } from '@/components';
 
 export default function Shop() {
   return (
-    <main className="min-h-screen items-center">
+    <main className="flex flex-col min-h-screen items-center">
       <NavBar />
-      <div className="flex justify-center p-20">This is the Shop page</div>
+      <div className="h-full p-20">This is the Shop page</div>
+      <Footer />
     </main>
   );
 }
