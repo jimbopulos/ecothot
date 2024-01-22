@@ -1,6 +1,6 @@
 ## Ecothot
 
-**Thots Against Climate Change ©2017**
+**Ecothot ©2017** | _Thots Against Climate Change_
 
 Ecothot is an environmental awareness movement aimed at making both accessible, and fun, the promotion of actionable change against climate change.
 
