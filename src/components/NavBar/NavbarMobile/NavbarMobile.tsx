@@ -10,14 +10,16 @@ export function NavbarMobile() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav className="lg:hidden flex left-0 absolute w-full font-semibold p-3">
+    <nav className="lg:hidden flex left-0 absolute w-full font-semibold p-2.5">
       <div
-        className={`space-y-2 p-4 bg-white rounded-md ${isNavOpen && 'hidden'}`}
+        className={`space-y-2 ml-1.5 mt-1.5 p-2.5 bg-white rounded-md ${
+          isNavOpen && 'hidden'
+        }`}
         onClick={() => setIsNavOpen((prev) => !prev)}
       >
-        <span className="block h-0.5 w-8 bg-red-900 rounded-full"></span>
-        <span className="block h-0.5 w-8 bg-red-900 rounded-full"></span>
-        <span className="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+        <span className="block h-1 w-8 bg-red-900 rounded-full"></span>
+        <span className="block h-1 w-8 bg-red-900 rounded-full"></span>
+        <span className="block h-1 w-8 bg-red-900 rounded-full"></span>
       </div>
       <div
         className={
