@@ -19,14 +19,16 @@ export function NavbarDesktop() {
             href={href}
             className={
               isActive
-                ? `px-6 py-2 ${!isLastItem && 'mr-7'} text-white bg-zinc-800 ${
-                    isFirstItem && 'rounded-l-sm'
-                  } ${isLastItem && 'rounded-r-sm'}`
-                : `px-6 py-2 ${
+                ? `px-6 py-2 text-white bg-zinc-800 transition-all duration-300 ease-out ${
                     !isLastItem && 'mr-7'
-                  } transition duration-200 hover:text-white hover:bg-zinc-800 ${
-                    isFirstItem && 'hover:rounded-l-sm'
-                  } ${isLastItem && 'hover:rounded-r-sm'}`
+                  } ${isFirstItem && 'rounded-l-sm'} ${
+                    isLastItem && 'rounded-r-sm'
+                  }`
+                : `px-6 py-2 transition-all duration-300 ease-out hover:text-white hover:bg-zinc-800  ${
+                    !isLastItem && 'mr-7'
+                  } ${isFirstItem && 'hover:rounded-l-sm'} ${
+                    isLastItem && 'hover:rounded-r-sm'
+                  }`
             }
           >
             {title}
