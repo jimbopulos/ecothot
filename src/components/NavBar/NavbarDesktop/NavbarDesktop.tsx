@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-// add props for links (objects with href, key, etc.)
+// add props for links (objects with href, key, etc.) -- include isFirst/isLast element prop
 // map to cleanup and DRY
 
 export function NavbarDesktop() {
@@ -11,13 +11,13 @@ export function NavbarDesktop() {
   const isActive = (href: string) => currentPath === href;
 
   return (
-    <nav className="flex font-semibold text-lg rounded-sm justify-center shrink mt-7 px-9 max-w-screen-xl bg-white shadow shadow-black">
+    <nav className="flex flex-row font-semibold text-lg rounded-sm justify-center mt-7 px-18 max-w-screen-xl bg-white shadow-md shadow-gray-800">
       <Link
         href="/"
-        className={`inline-block px-5 py-2 mr-7 ${
+        className={` px-6 py-2 mr-7 ${
           isActive('/')
-            ? 'text-white bg-zinc-800'
-            : 'transition duration-300 hover:text-white hover:bg-zinc-800'
+            ? 'text-white bg-zinc-800 rounded-l-sm'
+            : 'transition duration-200 hover:text-white hover:bg-zinc-800 hover:rounded-l-sm'
         }
             `}
       >
@@ -25,16 +25,16 @@ export function NavbarDesktop() {
       </Link>
       <Link
         href="https://discord.gg/GSqNxP7D"
-        className="inline-block px-5 py-2 mr-7 transition duration-300 hover:text-white hover:bg-zinc-800"
+        className=" px-6 py-2 mr-7 transition duration-200 hover:text-white hover:bg-zinc-800"
       >
         Discord
       </Link>
       <Link
         href="/shop"
-        className={`inline-block px-5 py-2 mr-7 ${
+        className={` px-6 py-2 mr-7 ${
           isActive('/shop')
             ? 'text-white bg-zinc-800'
-            : 'transition duration-300 hover:text-white hover:bg-zinc-800'
+            : 'transition duration-200 hover:text-white hover:bg-zinc-800'
         }
             `}
       >
@@ -42,10 +42,10 @@ export function NavbarDesktop() {
       </Link>
       <Link
         href="/games"
-        className={`inline-block px-5 py-2 mr-7 ${
+        className={` px-6 py-2 mr-7 ${
           isActive('/games')
             ? 'text-white bg-zinc-800'
-            : 'transition duration-300 hover:text-white hover:bg-zinc-800'
+            : 'transition duration-200 hover:text-white hover:bg-zinc-800'
         }
             `}
       >
@@ -53,10 +53,10 @@ export function NavbarDesktop() {
       </Link>
       <Link
         href="/loyalty"
-        className={`inline-block px-5 py-2 mr-7 ${
+        className={` px-6 py-2 mr-7 ${
           isActive('/loyalty')
             ? 'text-white bg-zinc-800'
-            : 'transition duration-300 hover:text-white hover:bg-zinc-800'
+            : 'transition duration-200 hover:text-white hover:bg-zinc-800'
         }
             `}
       >
@@ -64,10 +64,10 @@ export function NavbarDesktop() {
       </Link>
       <Link
         href="/forum"
-        className={`inline-block px-5 py-2 ${
+        className={` px-6 py-2 ${
           isActive('/forum')
-            ? 'text-white bg-zinc-800'
-            : 'transition duration-300 hover:text-white hover:bg-zinc-800'
+            ? 'text-white bg-zinc-800 rounded-r-sm'
+            : 'transition duration-200 hover:text-white hover:bg-zinc-800 hover:rounded-r-sm'
         }
             `}
       >
