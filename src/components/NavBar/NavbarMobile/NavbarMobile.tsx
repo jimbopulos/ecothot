@@ -14,9 +14,9 @@ export function NavbarMobile() {
     <nav className="lg:hidden flex flex-col absolute w-full left-0 font-semibold p-2.5">
       <button
         onClick={handleClick}
-        className={
-          'flex flex-col absolute justify-center items-center p-2.5 transition-all duration-300 ease-out bg-white rounded-md'
-        }
+        className={`flex flex-col absolute justify-center items-center p-2.5 transition-all duration-300 ease-out bg-white rounded-md ${
+          !isOpen && 'shadow-md shadow-gray-800'
+        }`}
       >
         <span
           className={`block h-1 w-7 bg-red-900 transition-all duration-300 ease-out rounded-full ${
