@@ -11,7 +11,10 @@ export function NavbarMobile() {
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="lg:hidden flex flex-col absolute w-full left-0 font-semibold p-2.5">
+    <nav
+      className="lg:hidden flex flex-col absolute w-full left-0 font-semibold p-2.5"
+      data-testid="test-NavbarMobile"
+    >
       <button
         onClick={handleClick}
         className={`flex flex-col absolute justify-center items-center p-2.5 transition-all duration-300 ease-out bg-white rounded-md ${
@@ -36,7 +39,10 @@ export function NavbarMobile() {
       </button>
 
       {isOpen ? (
-        <div className="flex flex-col w-full h-lvh justify-evenly items-center bg-white rounded-sm shadow-md shadow-gray-800 transition-all duration-300 ease-out">
+        <div
+          className="flex flex-col w-full h-lvh justify-evenly items-center bg-white rounded-sm shadow-md shadow-gray-800 transition-all duration-300 ease-out"
+          data-testid="test-NavbarMobile-open"
+        >
           {navItems.map(({ id, title, href }) => {
             const isActive = currentPath === href;
 

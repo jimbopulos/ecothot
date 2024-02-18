@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest — watchAll"
+    "test": "jest --coverage",
+    "test:watch": "jest —-watchAll"
   },
   "dependencies": {
     "jest": "^29.7.0",
