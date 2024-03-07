@@ -9,7 +9,10 @@ export function NavbarDesktop() {
   // const segment = useSelectedLayoutSegment();
 
   return (
-    <nav className="hidden lg:flex flex-row font-semibold text-lg rounded-sm justify-center mt-7 px-18 max-w-screen-xl bg-white shadow-md shadow-gray-800">
+    <nav
+      className="hidden lg:flex flex-row font-semibold text-lg rounded-sm justify-center mt-7 px-18 max-w-screen-xl bg-white shadow-md shadow-gray-800"
+      data-testid="test-NavbarDesktop"
+    >
       {navItems.map(({ id, title, href, isFirstItem, isLastItem }) => {
         const isActive = currentPath === href;
 
