@@ -4,7 +4,7 @@
 
 Ecothot is a multimedia movement dedicated to the advancement of the scientific community.
 
-Its mission was initiated by @pujithegreatest and has since gained numerous followers and supporters, with hopes to grow for the sake of our planet's future, and increased quality of life for posterity.
+Its mission was initiated by **[@pujithegreatest](https://github.com/pujithegreatest)** and has since gained numerous followers and supporters, with hopes to grow for the sake of our planet's future, and increased quality of life for posterity.
 
 Let's act before it's too late, there's no time to lose!
 
