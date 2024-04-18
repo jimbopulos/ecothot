@@ -5,16 +5,19 @@ const prisma = new PrismaClient();
 const userData = [
   {
     name: 'Eco',
+    updated_at: '2024-04-16',
     email: 'test_ecothot@ecothot.com',
     points: 2,
   },
   {
     name: 'Thotty',
+    updated_at: '2024-04-16',
     email: 'test_thotty@ecothot.com',
     points: 24,
   },
   {
     name: 'McGee',
+    updated_at: '2024-04-16',
     email: 'test_mcgee@ecothot.com',
     points: 12,
   },
