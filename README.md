@@ -24,6 +24,36 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the Ecothot website up and running.
 
+## Initialize the Database
+
+This repository uses several different environments:
+
+### Local Setup
+
+Make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
+
+You'll also probably want to install [Supabase](https://supabase.com/) globally for ease of use in the command line. In your terminal, run:
+
+```bash
+brew install supabase/tap/supabase
+```
+
+Then, from the project root:
+
+```bash
+supabase start
+```
+
+This will start a local **supabase** instance inside of a Docker container
+
+### Staging Setup
+
+First, create an `.env` file at root of your project if you haven't yet done so
+
+Then, get the credentials from [@jimbopulos](https://github.com/jimbopulos) and place them in there
+
+If you have access, you can navigate database tables via the [Dashboard](https://supabase.com/dashboard/project/mbcddyyzdcduzmscxflz)
+
 ## WIP
 
 This project is a work in progress, slowly becoming the replatformed site for the current production website: [ecothot.com](https://www.ecothot.com/)
