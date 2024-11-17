@@ -36,7 +36,7 @@ First, create an `.env` file at root of your project if you haven't yet done so
 
 Then, get the credentials from [@jimbopulos](https://github.com/jimbopulos) and place them in there
 
-If you have access, you can navigate database tables via the [Dashboard](https://supabase.com/dashboard/project/mbcddyyzdcduzmscxflz)
+If you have access, you can navigate database tables via the [Dashboard](https://supabase.com/dashboard/project/niicvnuzeowgodyunhvg)
 
 ## Running Migrations
 
