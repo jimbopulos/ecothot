@@ -8,22 +8,6 @@ Its mission was initiated by **[@pujithegreatest](https://github.com/pujithegrea
 
 Let's act before it's too late, there's no time to lose!
 
-## Getting Started
-
-First, install Node modules:
-
-```bash
-npm install
-```
-
-Then, run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the Ecothot website up and running.
-
 ## Initialize the Database
 
 This repository uses several different environments:
@@ -53,6 +37,34 @@ First, create an `.env` file at root of your project if you haven't yet done so
 Then, get the credentials from [@jimbopulos](https://github.com/jimbopulos) and place them in there
 
 If you have access, you can navigate database tables via the [Dashboard](https://supabase.com/dashboard/project/mbcddyyzdcduzmscxflz)
+
+## Running Migrations
+
+Again, make sure you have the `.env` file with proper credentials and information from [@jimbopulos](https://github.com/jimbopulos)
+
+You'll want to make sure you set your `DIRECT_URL` variable to the correct value, depending on whether you're running migrations locally or in Staging/Production
+
+Next, run the following:
+
+```
+npx prisma migrate dev
+```
+
+## Getting Started
+
+First, install Node modules:
+
+```bash
+npm install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the Ecothot website up and running.
 
 ## WIP
 
