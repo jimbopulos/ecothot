@@ -1,11 +1,10 @@
-import { Navbar, Footer } from '@/components';
+import NavBar from '@/src/components/NavBar';
 
 export default function Games() {
   return (
-    <main className="flex flex-col min-h-screen items-center">
-      <Navbar />
-      <div className="h-full p-20">This is the Games page</div>
-      <Footer />
+    <main className="min-h-screen items-center">
+      <NavBar />
+      <div className="flex justify-center p-20">This is the Games page</div>
     </main>
   );
 }
